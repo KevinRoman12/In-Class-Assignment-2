@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Reveal What’s that Animal UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="outer-box">
+
+<div class="title-box">
+    <h1>Welcome to the Interactive Reveal What’s that Animal UI</h1>
+</div>
+
+<div class="message-box">
+    <p>Click on the buttons below to reveal the animal images</p>
+</div>
+
+<div class="animals-box">
+<div class="animal-column">
+    <div class="image-box">
+        <img id="catImg" src="/Images/tabby-cat.jpg" alt="Cat" class="animal-image hidden">
+        <button id="hideCatBtn" class="hide-btn hidden">Hide Result</button>
+    </div>
+        <button id="catBtn" class="reveal-btn">Reveal a CAT</button>
+</div>
+
+<div class="animal-column">
+    <div class="image-box">
+        <img id="dogImg" src="/Images/dog.jpg" alt="Dog" class="animal-image hidden">
+        <button id="hideDogBtn" class="hide-btn hidden">Hide Result</button>
+    </div>
+        <button id="dogBtn" class="reveal-btn">Reveal a DOG</button>
+</div>
+
+<div class="animal-column">
+    <div class="image-box">
+        <img id="cowImg" src="/Images/cow.jpg" alt="Cow" class="animal-image hidden">
+        <button id="hideCowBtn" class="hide-btn hidden">Hide Result</button>
+    </div>
+        <button id="cowBtn" class="reveal-btn">Reveal a COW</button>
+</div>
+</div>
+
+<div class="bottom-row">
+    <button id="resetBtn" class="reset-btn">Reset Zoo</button>
+    <h3 id="counter">Animals on screen: 0</h3>
+</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
